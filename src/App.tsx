@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import './App.css';
 import SiteHeader from './Components/SiteHeader/SiteHeader';
 import Home from "./Pages/Home";
@@ -9,12 +9,12 @@ function App() {
     <div className="App">
         <SiteHeader />
       <body>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/calc" element={<Calc/>} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         <br />
         <a
           className="App-link"
