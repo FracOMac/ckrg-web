@@ -3,6 +3,7 @@ import './App.css';
 import SiteHeader from './Components/SiteHeader/SiteHeader';
 import Home from "./Pages/Home";
 import Calc from "./Pages/Calc";
+import Search from "./Pages/Search";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/calc" element={<Calc/>} />
+            <Route path="/search" element={<Search />} />
           </Routes>
         </HashRouter>
         <br />
