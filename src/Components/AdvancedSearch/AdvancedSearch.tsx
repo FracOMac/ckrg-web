@@ -15,15 +15,12 @@ class AdvancedSearch extends React.Component {
 
   async processInput(input: string) {
     this.setState({ inputText: input });
-    console.log('input is ' + input);
     const output = await PokemonSearchStringResult(input);
     this.setState({ outputText: output });
-    console.log(output);
   }
 
   handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     this.processInput(event.target.value);
-    //console.log(event.target.value);
   }
 
   render() {
