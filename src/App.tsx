@@ -8,25 +8,23 @@ import Search from "./Pages/Search";
 function App() {
   return (
     <div className="App">
-        <SiteHeader />
-      <body>
-        <HashRouter>
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/calc" element={<Calc/>} />
-            <Route path="/search" element={<Search />} />
-          </Routes>
-        </HashRouter>
-        <br />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </body>
+      <SiteHeader />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/calc" element={<Calc/>} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </HashRouter>
+      <br />
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
     </div>
   );
 }
